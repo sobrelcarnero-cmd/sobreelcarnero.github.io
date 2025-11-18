@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre el Carnero - Literatura y Reflexión</title>
+    <style>
+        /* Estilos generales */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+        
+        a {
+            color: #8c6239;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        a:hover {
+            color: #6d4c2d;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header */
+        header {
+            background-color: #fff;
+            border-bottom: 1px solid #eaeaea;
+            padding: 20px 0;
+        }
+        
+        .site-title {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        .site-title h1 {
+            font-size: 2.5rem;
+            color: #8c6239;
+            font-weight: normal;
+            letter-spacing: 2px;
+        }
+        
+        .site-title p {
+            font-style: italic;
+            color: #777;
+            font-size: 1rem;
+        }
+        
+        /* Navegación */
+        nav {
+            margin-top: 20px;
+        }
+        
+        .main-menu {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            border-top: 1px solid #eaeaea;
+            border-bottom: 1px solid #eaeaea;
+            padding: 15px 0;
+        }
+        
+        .main-menu li {
+            margin: 0 15px;
+        }
+        
+        .main-menu a {
+            font-size: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        /* Contenido principal */
+        .main-content {
+            display: flex;
+            margin: 40px 0;
+        }
+        
+        .content-area {
+            flex: 3;
+            padding-right: 40px;
+        }
+        
+        .widget-area {
+            flex: 1;
+        }
+        
+        /* Artículos */
+        article {
+            background: #fff;
+            margin-bottom: 40px;
+            padding: 30px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .entry-header {
+            margin-bottom: 20px;
+        }
+        
+        .entry-title {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+            color: #333;
+            font-weight: normal;
+        }
+        
+        .entry-meta {
+            color: #777;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+        
+        .entry-content {
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+        
+        .entry-content p {
+            margin-bottom: 20px;
+        }
+        
+        .more-link {
+            display: inline-block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        
+        /* Widgets */
+        .widget {
+            background: #fff;
+            margin-bottom: 30px;
+            padding: 25px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .widget-title {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #eaeaea;
+            color: #8c6239;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        .widget ul {
+            list-style: none;
+        }
+        
+        .widget li {
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px dashed #eaeaea;
+        }
+        
+        .widget li:last-child {
+            border-bottom: none;
+        }
+        
+        .textwidget p {
+            margin-bottom: 15px;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 40px 0 20px;
+            text-align: center;
+        }
+        
+        .footer-widgets {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+        }
+        
+        .footer-widget {
+            flex: 1;
+            padding: 0 15px;
+        }
+        
+        .footer-widget h3 {
+            color: #8c6239;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+        }
+        
+        .footer-widget ul li a {
+            color: #ccc;
+        }
+        
+        .footer-widget ul li a:hover {
+            color: #fff;
+        }
+        
+        .site-info {
+            padding-top: 20px;
+            border-top: 1px solid #444;
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+            
+            .content-area {
+                padding-right: 0;
+            }
+            
+            .footer-widgets {
+                flex-direction: column;
+            }
+            
+            .footer-widget {
+                margin-bottom: 30px;
+            }
+            
+            .main-menu {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .main-menu li {
+                margin: 5px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="site-title">
+                <h1>Sobre el Carnero</h1>
+                <p>Reflexiones literarias y cotidianas</p>
+            </div>
+            
+            <nav>
+                <ul class="main-menu">
+                    <li><a href="#">Inicio</a></li>
+                    <li><a href="#">Sobre mí</a></li>
+                    <li><a href="#">Literatura</a></li>
+                    <li><a href="#">Reflexiones</a></li>
+                    <li><a href="#">Libros</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="main-content">
+            <main class="content-area">
+                <article>
+                    <header class="entry-header">
+                        <h2 class="entry-title">La metáfora del carnero en la literatura contemporánea</h2>
+                        <div class="entry-meta">
+                            Publicado el 15 de marzo, 2023 por <a href="#">Admin</a> | <a href="#">2 comentarios</a>
+                        </div>
+                    </header>
+                    
+                    <div class="entry-content">
+                        <p>El carnero, como símbolo literario, ha transitado por diversas interpretaciones a lo largo de la historia de la literatura. Desde su representación como animal de sacrificio hasta su asociación con la obstinación y la fuerza, el carnero ha servido de metáfora para explorar la condición humana en sus múltiples facetas.</p>
+                        
+                        <p>En la narrativa contemporánea, encontramos autores que han rescatado esta figura para cuestionar las estructuras sociales y los roles preestablecidos. La obstinación del carnero, lejos de ser un defecto, se transforma en estas obras en una virtud necesaria para enfrentar un mundo cada vez más complejo.</p>
+                        
+                        <p>¿Qué nos dice esta persistente presencia del carnero en nuestra imaginación colectiva? Quizás que, en el fondo, todos llevamos dentro un carnero dispuesto a embestir contra aquellos muros que consideramos injustos, aquellos límites que merecen ser desafiados.</p>
+                        
+                        <a href="#" class="more-link">Seguir leyendo →</a>
+                    </div>
+                </article>
+                
+                <article>
+                    <header class="entry-header">
+                        <h2 class="entry-title">Reseña: "El último carnero" de Ana Martínez</h2>
+                        <div class="entry-meta">
+                            Publicado el 8 de marzo, 2023 por <a href="#">Admin</a> | <a href="#">5 comentarios</a>
+                        </div>
+                    </header>
+                    
+                    <div class="entry-content">
+                        <p>La última novela de Ana Martínez nos sumerge en un mundo rural que se resiste a desaparecer, donde las tradiciones y la modernidad chocan de manera inevitable. A través de la metáfora del carnero, la autora explora temas como la identidad, la resistencia al cambio y la búsqueda de significado en un mundo acelerado.</p>
+                        
+                        <p>El protagonista, un ganadero que se niega a abandonar sus costumbres a pesar de las presiones económicas y sociales, encarna esa testarudez que a veces es necesaria para preservar lo esencial. Martínez logra construir personajes complejos y situaciones que resuenan con nuestra propia experiencia, independientemente de nuestro contexto.</p>
+                        
+                        <p>Una lectura recomendable para quienes buscan narrativas que exploren la relación entre el ser humano y su entorno, con todas las contradicciones que esta conlleva.</p>
+                        
+                        <a href="#" class="more-link">Seguir leyendo →</a>
+                    </div>
+                </article>
+            </main>
+            
+            <aside class="widget-area">
+                <div class="widget">
+                    <h3 class="widget-title">Sobre este blog</h3>
+                    <div class="textwidget">
+                        <p>Bienvenido a "Sobre el Carnero", un espacio dedicado a la literatura, la reflexión y el análisis de aquellos símbolos que pueblan nuestra imaginación colectiva.</p>
+                        <p>Exploramos cómo las metáforas animales, en particular la figura del carnero, han influido en la narrativa y el pensamiento a lo largo del tiempo.</p>
+                    </div>
+                </div>
+                
+                <div class="widget">
+                    <h3 class="widget-title">Entradas recientes</h3>
+                    <ul>
+                        <li><a href="#">La metáfora del carnero en la literatura contemporánea</a></li>
+                        <li><a href="#">Reseña: "El último carnero" de Ana Martínez</a></li>
+                        <li><a href="#">El carnero en la mitología griega</a></li>
+                        <li><a href="#">Interpretaciones psicoanalíticas del símbolo del carnero</a></li>
+                        <li><a href="#">Entrevista con el escritor Miguel Ángel Ortega</a></li>
+                    </ul>
+                </div>
+                
+                <div class="widget">
+                    <h3 class="widget-title">Categorías</h3>
+                    <ul>
+                        <li><a href="#">Literatura</a></li>
+                        <li><a href="#">Reseñas</a></li>
+                        <li><a href="#">Reflexiones</a></li>
+                        <li><a href="#">Entrevistas</a></li>
+                        <li><a href="#">Eventos</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-widgets">
+                <div class="footer-widget">
+                    <h3>Archivos</h3>
+                    <ul>
+                        <li><a href="#">Marzo 2023</a></li>
+                        <li><a href="#">Febrero 2023</a></li>
+                        <li><a href="#">Enero 2023</a></li>
+                        <li><a href="#">Diciembre 2022</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-widget">
+                    <h3>Enlaces de interés</h3>
+                    <ul>
+                        <li><a href="#">Revista Literaria</a></li>
+                        <li><a href="#">Club de Lectura</a></li>
+                        <li><a href="#">Biblioteca Nacional</a></li>
+                        <li><a href="#">Ferias del Libro</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-widget">
+                    <h3>Redes sociales</h3>
+                    <ul>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Goodreads</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="site-info">
+                <p>Sobre el Carnero &copy; 2023 - Todos los derechos reservados</p>
+                <p>Un blog sobre literatura y reflexión</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
